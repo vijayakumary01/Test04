@@ -10,11 +10,6 @@ resources:
       type: GitHub
       endpoint: pwc-us-adv-cloud-intelligence-ccs-signal-qualification-service
       name: pwc-us-adv-cloud-intelligence-platform/cip-sqs-source-registry
-      ref: ${{ parameters.branchName }}
-      trigger:
-        branches:
-          include:
-          - '*'  # must quote since "*" is a YAML reserved character; we want a string
       pr:
       - develop
 
