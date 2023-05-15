@@ -3,7 +3,7 @@ resources:
     - repository: Test04
       type: GitHub
       endpoint: github.com_vijayakumary01
-      name: Test04
+      name: vijayakumary01/Test04
       trigger:
         branches:
           include:
