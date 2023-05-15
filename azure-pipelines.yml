@@ -1,0 +1,30 @@
+parameters:
+  - name: branchName
+    type: string
+    default: 'develop'
+
+
+resources:
+  repositories:
+    - repository: CIP
+      type: GitHub
+      endpoint: pwc-us-adv-cloud-intelligence-ccs-signal-qualification-service
+      name: vijayakumary01/Test04
+      pr:
+      - develop
+
+
+trigger: none
+
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- script: |
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+  displayName: 'Run a multi-line script'
