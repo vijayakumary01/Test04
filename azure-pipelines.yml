@@ -1,6 +1,6 @@
 resources:
   repositories:
-    - repository: Test04
+    - repository: Anyname
       type: GitHub
       endpoint: github.com_vijayakumary01
       name: vijayakumary01/Test04
