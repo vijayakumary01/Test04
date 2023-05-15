@@ -4,8 +4,8 @@ resources:
       type: GitHub
       endpoint: pwc-us-adv-cloud-intelligence-ccs-signal-qualification-service
       name: vijayakumary01/Test04
-      pr:
-      - develop
+pr:
+- develop
 
 
 trigger: none
