@@ -2,7 +2,7 @@ resources:
   repositories:
     - repository: Test04
       type: GitHub
-      endpoint: pwc-us-adv-cloud-intelligence-ccs-signal-qualification-service
+      endpoint: github.com_vijayakumary01
       name: Test04
       trigger:
         branches:
