@@ -1,28 +1,28 @@
-#resources:
-  #repositories:
-    #- repository: Anyname
-      #type: GitHub
-      #endpoint: github.com_vijayakumary01
-      #name: vijayakumary01/Test04
-      #trigger:
-        #branches:
-          #include:
-          #- '*'  # must quote since "*" is a YAML reserved character; we want a string
-      #pr:
-        #branches:
-          #include:
-           #- develop
-
-
 resources:
-  webhooks:
-    - webhook: ICWebHook          
-      connection: ICWebHook    
-      filters:
-        - path: repositoryName      
-          value: vijayakumary01/Test03     
-        - path: action
-          value: CREATED
+  repositories:
+    - repository: Anyname
+      type: GitHub
+      endpoint: github.com_vijayakumary01
+      name: vijayakumary01/Test03
+      trigger:
+        branches:
+          include:
+          - '*'  # must quote since "*" is a YAML reserved character; we want a string
+      pr:
+        branches:
+          include:
+           - develop
+
+
+# resources:
+#   webhooks:
+#     - webhook: ICWebHook          
+#       connection: ICWebHook    
+#       filters:
+#         - path: repositoryName      
+#           value: vijayakumary01/Test03     
+#         - path: action
+#           value: CREATED
 
 
 
