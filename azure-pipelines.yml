@@ -1,18 +1,3 @@
-parameters:
-  - name: branchName
-    type: string
-    default: 'develop'
-
-
-resources:
-  repositories:
-    - repository: CIP
-      type: GitHub
-      endpoint: pwc-us-adv-cloud-intelligence-ccs-signal-qualification-service
-      name: pwc-us-adv-cloud-intelligence-platform/cip-sqs-source-registry
-      pr:
-      - develop
-
 
 trigger: none
 
